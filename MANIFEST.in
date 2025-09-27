@@ -1,0 +1,30 @@
+# Include documentation and configuration files
+include README.md
+include LICENSE
+include CHANGELOG.md
+include pyproject.toml
+
+# Include example files
+recursive-include examples *.json *.yml *.yaml *.py *.txt *.md *.env*
+
+# Include test files for development installations
+recursive-include tests *.py
+
+# Exclude compiled Python files
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.pyd
+global-exclude __pycache__
+global-exclude *.so
+global-exclude *.egg-info
+
+# Exclude development and build artifacts
+exclude .gitignore
+exclude .pre-commit-config.yaml
+exclude tox.ini
+exclude Makefile
+recursive-exclude .git *
+recursive-exclude .pytest_cache *
+recursive-exclude build *
+recursive-exclude dist *
+recursive-exclude *.egg-info *

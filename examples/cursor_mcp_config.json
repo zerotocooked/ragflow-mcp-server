@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "ragflow": {
+      "command": "python",
+      "args": ["-m", "ragflow_mcp_server"],
+      "env": {
+        "RAGFLOW_BASE_URL": "http://localhost:9380",
+        "RAGFLOW_API_KEY": "your_api_key_here",
+        "RAGFLOW_DEFAULT_DATASET_ID": "your_default_dataset_id",
+        "RAGFLOW_TIMEOUT": "30",
+        "RAGFLOW_MAX_RETRIES": "3"
+      }
+    }
+  }
+}

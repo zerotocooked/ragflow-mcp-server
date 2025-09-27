@@ -1,0 +1,34 @@
+# Sample Document for RAGFlow Testing
+
+This is a sample document that can be used to test the RAGFlow MCP Server.
+
+## Machine Learning Concepts
+
+Machine learning is a subset of artificial intelligence that focuses on algorithms
+that can learn and make decisions from data without being explicitly programmed.
+
+### Key Algorithms
+
+1. **Linear Regression**: Used for predicting continuous values
+2. **Decision Trees**: Good for classification and regression tasks
+3. **Neural Networks**: Powerful for complex pattern recognition
+
+## Data Preprocessing
+
+Data preprocessing is crucial for machine learning success:
+
+- **Data Cleaning**: Remove or handle missing values
+- **Feature Scaling**: Normalize data ranges
+- **Feature Selection**: Choose relevant features
+
+## Model Evaluation
+
+Common metrics for evaluating models:
+
+- **Accuracy**: Percentage of correct predictions
+- **Precision**: True positives / (True positives + False positives)
+- **Recall**: True positives / (True positives + False negatives)
+- **F1-Score**: Harmonic mean of precision and recall
+
+This document provides basic examples that can be searched and retrieved
+using the RAGFlow semantic search capabilities.

@@ -1,0 +1,40 @@
+# Example Docker Compose configuration for running RAGFlow with MCP Server
+# This is for development and testing purposes
+
+version: '3.8'
+
+services:
+  # RAGFlow service (example configuration)
+  ragflow:
+    image: infiniflow/ragflow:latest
+    container_name: ragflow
+    ports:
+      - "9380:9380"
+    environment:
+      - RAGFLOW_API_KEY=your_api_key_here
+    volumes:
+      - ragflow_data:/opt/ragflow/data
+    restart: unless-stopped
+    
+  # Example of running the MCP server in a container
+  ragflow-mcp-server:
+    build: .
+    container_name: ragflow-mcp-server
+    environment:
+      - RAGFLOW_BASE_URL=http://ragflow:9380
+      - RAGFLOW_API_KEY=your_api_key_here
+      - RAGFLOW_DEFAULT_DATASET_ID=your_dataset_id
+    depends_on:
+      - ragflow
+    restart: unless-stopped
+    # Note: In practice, you'd typically run the MCP server locally
+    # This is just an example of containerized deployment
+
+volumes:
+  ragflow_data:
+
+# Usage:
+# 1. Update the API key and dataset ID
+# 2. Run: docker-compose up -d ragflow
+# 3. Wait for RAGFlow to start and create your API key
+# 4. Update the configuration and run the MCP server locally

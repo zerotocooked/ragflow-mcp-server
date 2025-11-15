@@ -5,14 +5,33 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "ragflow-mcp-server"
 version = "0.1.0"
-description = "MCP server for RAGFlow API integration with Cursor IDE"
+description = "A Model Context Protocol (MCP) server for integrating RAGFlow's powerful document processing and semantic search capabilities with Cursor IDE and other MCP-compatible development environments"
 authors = [
     {name = "Developer", email = "developer@example.com"}
 ]
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.8"
-keywords = ["mcp", "ragflow", "cursor", "ide", "ai", "search", "documents"]
+keywords = [
+    "mcp",
+    "ragflow",
+    "cursor",
+    "ide",
+    "ai",
+    "search",
+    "documents",
+    "semantic-search",
+    "rag",
+    "retrieval-augmented-generation",
+    "knowledge-base",
+    "document-management",
+    "embedding",
+    "vector-search",
+    "llm",
+    "language-model",
+    "model-context-protocol",
+    "cursor-ide"
+]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
